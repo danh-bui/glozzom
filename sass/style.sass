@@ -1,13 +1,45 @@
+@mixin center
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+@mixin smallBackground
+  position: relative
+  min-height: 200px
+  background-attachment: fixed
+  background-repeat: no-repeat
+
+.bg-red
+  background: #d62d20
+
+.btn-outline-red
+  border: 1px solid #d62d20
+  color: #d62d20
+  &:hover
+    background: #d62d20
+    color: #fff
+.btn-red
+  background: #d62d20
+  color: #fff
+  &:hover
+    background: #d61a20
+    color: #f1f1f1
+
+.card
+  height: 100%
+
 .navbar
-  padding: 0
-  // height: 1rem
-  .nav-item
-    text-transform: uppercase
-    padding: 0
-    .active
-      border-bottom: 2px solid #999
+  padding-top: 0
+  padding-bottom: 0
+  .active
+    background: #d9534f
+    background: #d62d20
   .nav-link
+    text-transform: uppercase
     font-size: 14px
+    padding-left: 1rem !important
+    padding-right: 1rem !important
 
 #showcase
   .carousel
@@ -25,18 +57,10 @@
         background-size: cover
 
 #home-heading
-  position: relative
-  min-height: 200px
   background: url("../img/lights.jpg")
-  background-attachment: fixed
-  background-repeat: no-repeat
+  @include smallBackground
   .row
-    position: absolute
-    top: 50%
-    left: 50%
-    transform: translate(-50%, -50%)
-  p 
-    margin: 0
+    @include center
 
 .dark-overlay
   position: absolute
@@ -45,3 +69,30 @@
   width: 100%
   height: 100%
   background: rgba(0,0,0,.7)
+
+#video-play
+  background: url("../img/media.jpg")
+  @include smallBackground
+  .row
+    @include center
+
+#footer
+  background: #000
+  p
+    margin: 0
+
+#about-header
+  background: url("../img/image1.jpg")
+  @include smallBackground
+  .row
+    @include center
+
+@media only screen and (max-width: 767px)
+  .mb-resp
+    margin-bottom: 1.5rem
+
+@media only screen and (max-width: 575px)
+  .nav
+    padding: .5rem 1rem
+    li:first-of-type
+      margin-top: .5rem
