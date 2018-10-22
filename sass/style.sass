@@ -10,6 +10,9 @@
   background-attachment: fixed
   background-repeat: no-repeat
 
+body
+  overflow-x: hidden
+
 .bg-red
   background: #d62d20
 
@@ -81,7 +84,9 @@
   p
     margin: 0
 
-#about-header
+#about-header,
+#services-header,
+#blog-header
   background: url("../img/image1.jpg")
   @include smallBackground
   .row

@@ -1,3 +1,6 @@
+body {
+  overflow-x: hidden; }
+
 .bg-red {
   background: #d62d20; }
 
@@ -79,13 +82,17 @@
   #footer p {
     margin: 0; }
 
-#about-header {
+#about-header,
+#services-header,
+#blog-header {
   background: url("../img/image1.jpg");
   position: relative;
   min-height: 200px;
   background-attachment: fixed;
   background-repeat: no-repeat; }
-  #about-header .row {
+  #about-header .row,
+  #services-header .row,
+  #blog-header .row {
     position: absolute;
     top: 50%;
     left: 50%;
