@@ -77,6 +77,20 @@ body {
     left: 50%;
     transform: translate(-50%, -50%); }
 
+#faq .card {
+  border: 1px solid #222; }
+#faq .card-header {
+  padding: 0; }
+  #faq .card-header h5 {
+    line-height: 2.5;
+    padding-left: 1.2rem; }
+    #faq .card-header h5:hover {
+      cursor: pointer; }
+#faq .card-header,
+#faq .card-body {
+  background: #333;
+  color: #fff; }
+
 #footer {
   background: #000; }
   #footer p {

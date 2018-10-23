@@ -219,9 +219,11 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
+
   <script>
     // Get the current year for the copyright
-    $('#year').text(new Date().getFullYear())
+    $('#year').text(new Date().getFullYear());
 
     // Testimonial Slider
     $('.slider').slick({
@@ -229,6 +231,17 @@
       slideToShow: 1,
       slideToScroll: 1
     });
+    // $(document).ready(function(){
+    //   $(document).on('click', '[data-toggle="lightbox"]', function(event){
+    //     event.preventDefault();
+    //     $(this).ekkoLightbox();
+    //   });
+    //   $('.slider').slick({
+    //     infinite: true,
+    //     slideToShow: 1,
+    //     slideToScroll: 1
+    //   });
+    // });
   </script>
 </body>
 </html>
