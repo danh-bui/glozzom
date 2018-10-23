@@ -49,11 +49,13 @@ body {
   background: url("../img/lights.jpg");
   position: relative;
   min-height: 200px;
-  background-attachment: fixed;
-  webkit-background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center; }
+  @supports (background-attachment: local) or (background-attachment: fixed) {
+    #home-heading {
+      background-attachment: local;
+      background-attachment: fixed; } }
   #home-heading .row {
     position: absolute;
     top: 50%;
@@ -72,11 +74,13 @@ body {
   background: url("../img/media.jpg");
   position: relative;
   min-height: 200px;
-  background-attachment: fixed;
-  webkit-background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center; }
+  @supports (background-attachment: local) or (background-attachment: fixed) {
+    #video-play {
+      background-attachment: local;
+      background-attachment: fixed; } }
   #video-play .row {
     position: absolute;
     top: 50%;
@@ -114,11 +118,16 @@ body {
   background: url("../img/image1.jpg");
   position: relative;
   min-height: 200px;
-  background-attachment: fixed;
-  webkit-background-attachment: fixed;
   background-repeat: no-repeat;
   color: #fff;
   text-align: center; }
+  @supports (background-attachment: local) or (background-attachment: fixed) {
+    #about-header,
+    #services-header,
+    #blog-header,
+    #contact-header {
+      background-attachment: local;
+      background-attachment: fixed; } }
   #about-header .row,
   #services-header .row,
   #blog-header .row,
