@@ -50,7 +50,9 @@ body {
   position: relative;
   min-height: 200px;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center; }
   #home-heading .row {
     position: absolute;
     top: 50%;
@@ -70,7 +72,9 @@ body {
   position: relative;
   min-height: 200px;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center; }
   #video-play .row {
     position: absolute;
     top: 50%;
@@ -79,17 +83,22 @@ body {
 
 #faq .card {
   border: 1px solid #222; }
-#faq .card-header {
-  padding: 0; }
-  #faq .card-header h5 {
-    line-height: 2.5;
-    padding-left: 1.2rem; }
-    #faq .card-header h5:hover {
-      cursor: pointer; }
-#faq .card-header,
-#faq .card-body {
-  background: #333;
-  color: #fff; }
+  #faq .card-header {
+    padding: 0;
+    cursor: pointer; }
+    #faq .card-header h5 {
+      line-height: 2.5;
+      padding-left: 1.2rem; }
+      #faq .card-header h5:hover {
+        cursor: pointer; }
+  #faq .card-header, #faq .card-body {
+    background: #333;
+    color: #fff; }
+
+#blog-body blockquote p {
+  font-size: 1.4rem; }
+#blog-body blockquote small {
+  font-size: 0.8rem; }
 
 #footer {
   background: #000; }
@@ -98,15 +107,27 @@ body {
 
 #about-header,
 #services-header,
-#blog-header {
+#blog-header,
+#contact-header {
   background: url("../img/image1.jpg");
   position: relative;
   min-height: 200px;
   background-attachment: fixed;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center; }
   #about-header .row,
   #services-header .row,
-  #blog-header .row {
+  #blog-header .row,
+  #contact-header .row {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  #about-header .row,
+  #services-header .row,
+  #blog-header .row,
+  #contact-header .row {
     position: absolute;
     top: 50%;
     left: 50%;

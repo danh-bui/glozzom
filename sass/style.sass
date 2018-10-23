@@ -9,6 +9,10 @@
   min-height: 200px
   background-attachment: fixed
   background-repeat: no-repeat
+  color: #fff
+  text-align: center
+  .row
+    @include center
 
 body
   overflow-x: hidden
@@ -62,8 +66,6 @@ body
 #home-heading
   background: url("../img/lights.jpg")
   @include smallBackground
-  .row
-    @include center
 
 .dark-overlay
   position: absolute
@@ -76,23 +78,30 @@ body
 #video-play
   background: url("../img/media.jpg")
   @include smallBackground
-  .row
-    @include center
 
 #faq
   .card
     border: 1px solid #222
-  .card-header
-    padding: 0
-    h5
-      line-height: 2.5
-      padding-left: 1.2rem
-      &:hover
-        cursor: pointer
-  .card-header,
-  .card-body
-    background: #333
-    color: #fff
+    &-header
+      padding: 0
+      cursor: pointer
+      h5
+        line-height: 2.5
+        padding-left: 1.2rem
+        &:hover
+          cursor: pointer
+    &-header,
+    &-body
+      background: #333
+      color: #fff
+
+#blog-body
+  blockquote
+    p
+      font-size: 1.4rem
+      // font-weight: 400
+    small
+      font-size: .8rem
 
 #footer
   background: #000
@@ -101,7 +110,8 @@ body
 
 #about-header,
 #services-header,
-#blog-header
+#blog-header,
+#contact-header
   background: url("../img/image1.jpg")
   @include smallBackground
   .row
