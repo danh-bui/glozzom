@@ -6,6 +6,7 @@ body {
 
 .btn-outline-red {
   border: 1px solid #d62d20;
+  background: #fff;
   color: #d62d20; }
   .btn-outline-red:hover {
     background: #d62d20;
@@ -25,7 +26,6 @@ body {
   padding-top: 0;
   padding-bottom: 0; }
   .navbar .active {
-    background: #d9534f;
     background: #d62d20; }
   .navbar .nav-link {
     text-transform: uppercase;
